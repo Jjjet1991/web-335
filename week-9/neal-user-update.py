@@ -31,6 +31,7 @@ db.users.update_one(
 # Print updated document.
 pprint.pprint(db.users.find_one({"employee_id": "1234567"}))
 
+# Delete document Cruella DeVil- employee_id 765321
 result = db.users.delete_one({
     "employee_id": "765321"
 })
